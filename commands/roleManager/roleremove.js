@@ -1,7 +1,6 @@
 const { IDADMIN, IDPROF, IDBOT } = require('../../config')
 
-// eslint-disable-next-line no-unused-vars
-module.exports.run = (client, message, args) => {
+module.exports.run = (client, message) => {
   const guildRoles = message.guild.roles.cache.array()
   const guildMembers = message.guild.members.cache.array()
 

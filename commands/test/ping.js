@@ -1,5 +1,4 @@
-/* eslint-disable no-unused-vars */
-module.exports.run = (client, message, args) => {
+module.exports.run = (client, message) => {
   message.channel.send('Pong!')
 }
 
