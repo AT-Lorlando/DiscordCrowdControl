@@ -1,5 +1,6 @@
+require('dotenv').config()
 const { Client, Collection } = require('discord.js')
-const { TOKEN, PREFIX, IDADMIN } = require('./config')
+const { PREFIX, IDADMIN } = require('./config')
 const { readdirSync } = require('fs')
 
 const client = new Client()
@@ -44,7 +45,7 @@ client.on('message', (message) => {
   command.run(client, message, args)
 })
 
-client.login(TOKEN)
+client.login(process.env.TOKEN)
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`)
 })
