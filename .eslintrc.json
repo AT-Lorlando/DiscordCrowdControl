@@ -6,6 +6,8 @@
   "parserOptions": {
     "ecmaVersion": 6
   },
-  "extends": ["eslint:recommended", "prettier"],
-  "rules": {}
+  "extends": ["eslint:recommended", "plugin:prettier/recommended", "prettier"],
+  "rules": {
+    "prettier/prettier": "error"
+  }
 }
