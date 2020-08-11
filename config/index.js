@@ -1,4 +1,2 @@
-exports.PREFIX = '!'
+exports.PREFIX = 'Yui '
 exports.IDADMIN = ''
-exports.IDPROF = ''
-exports.IDBOT = ''
